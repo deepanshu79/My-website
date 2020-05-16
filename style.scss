@@ -1,0 +1,63 @@
+$color:#061538;
+%message{
+  background-color: $color;
+  color: white;
+  text-align: center;
+}
+header{
+  height: 25%;
+  padding:35px;
+  font-size: 25px;
+  text-align: left;
+}
+nav{
+  background-color: #7d818c;
+  font-size: 18px;
+  a{
+    color: white;
+    padding: 4px;
+  }
+}
+a:hover{
+  background-color: #2f2f40;
+  color:#2de4eb;
+  text-decoration: none;
+}
+.intro{
+  padding: 60px;
+  font-size: 60px;
+}
+body{
+  @extend %message;
+}
+img{
+  margin: 10px;
+  border: 2px solid #cbf1f2;
+}
+.highlight{
+  color:#2de4eb;
+}
+.IDS,#teams,#anime{
+  list-style: none;
+}
+ol li{
+  color:#2de4eb;
+}
+ol li::selection{
+  color:white;
+  background-color: #2de4eb;
+}
+.AboutInfo::before,.AboutInfo::after{
+  content: "~ ";
+}
+@media (max-width:500px){
+  body{
+    color:$color;
+    background-color: white;
+  }
+}
+table,th,tr,td{
+  table-align: center;
+  border: 1px solid white;
+  padding: 5px;
+}
